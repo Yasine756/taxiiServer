@@ -1,7 +1,6 @@
 import express from 'express'
 const routerTaxi = express.Router()
-import {addTaxi} from '../controllers/addTaxiController.js'
-import { getTaxis } from '../controllers/addTaxiController.js'
+import {addTaxi,getTaxis} from '../controllers/addTaxiController.js'
 import {chercherTaxi,remplireTaxi} from '../controllers/remplissageController.js'
 import {consultationTaxi} from '../controllers/consultation.js'
 import  AllTaxis from '../Controllers/AllTaxis.js'
