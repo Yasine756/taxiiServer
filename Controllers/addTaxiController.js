@@ -12,7 +12,7 @@ const getTaxis = asyncHandler(async (req, res) => {
 });
 
 // Ajouter un Taxi 
-const addTaxi = asyncHandler(async (req, res) => {
+const AddTaxi = asyncHandler(async (req, res) => {
   const { nom, prenom, telephone, matricule, inscrit_par } = req.body;
 
   // const { error } = ValidateAjouteTaxi(req.body);
@@ -28,4 +28,4 @@ const addTaxi = asyncHandler(async (req, res) => {
   });
 });
 
-export { getTaxis, addTaxi };
+export { getTaxis, AddTaxi };

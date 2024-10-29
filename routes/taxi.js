@@ -1,6 +1,6 @@
 import express from 'express'
 const routerTaxi = express.Router()
-import {addTaxi,getTaxis} from '../controllers/AddTaxiController.js'
+import {AddTaxi,getTaxis} from '../Controllers/AddTaxiController.js'
 import {chercherTaxi,remplireTaxi} from '../controllers/remplissageController.js'
 import {consultationTaxi} from '../controllers/consultation.js'
 import  AllTaxis from '../Controllers/AllTaxis.js'
@@ -12,7 +12,7 @@ import NouveauxTaxis from '../Controllers/nouveauTaxi.js'
 import { getHistoriqueTaxi } from '../Controllers/historiquetaxi.js'
 
 // ----- route pour ajouter taxi ---------
-routerTaxi.post('/addTaxi', addTaxi)
+routerTaxi.post('/addTaxi', AddTaxi)
 routerTaxi.get('/', getTaxis)
 routerTaxi.get('/remplissage', chercherTaxi)
 routerTaxi.post('/remplissage', remplireTaxi)
